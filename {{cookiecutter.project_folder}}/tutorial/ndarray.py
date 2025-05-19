@@ -79,17 +79,15 @@ def example_array_view_benchmark():
 
     # Benchmark NumPy native method
     start_time = time.time()
-    ii, jj = np.meshgrid(np.arange(rows, dtype=np.float32), 
-                         np.arange(cols, dtype=np.float32), 
-                         indexing='ij')
+    ii, jj = np.meshgrid(np.arange(rows, dtype=np.float32), np.arange(cols, dtype=np.float32), indexing="ij")
     array_numpy = ii * jj
     numpy_time = time.time() - start_time
     print(f"NumPy native: {numpy_time:.6f} sec")
 
     # Simple comparison
     print(f"\nSpeed comparison:")
-    print(f"C++ regular vs optimized: {regular_time/optimized_time:.2f}x")
-    print(f"C++ regular vs NumPy: {regular_time/numpy_time:.2f}x")
+    print(f"C++ regular vs optimized: {regular_time / optimized_time:.2f}x")
+    print(f"C++ regular vs NumPy: {regular_time / numpy_time:.2f}x")
 
 
 def example_specialized_views():
@@ -97,18 +95,17 @@ def example_specialized_views():
     float_array = np.zeros((5, 5), dtype=np.float32)
     int_array = np.zeros((5, 5), dtype=np.int32)
     float_3d_array = np.zeros((3, 3, 3), dtype=np.float32)
-    
+
     print(f"Float array: {_ndarray.fill_array_specialized(float_array)}")
     print(f"Int array: {_ndarray.fill_array_specialized(int_array)}")
     print(f"3D array: {_ndarray.fill_array_specialized(float_3d_array)}")
-    
+
     print("Float array result:")
     print(float_array)
     print("Int array result:")
     print(int_array)
     print("3D array (unchanged):")
     print(float_3d_array)
-
 
 
 example_basic_inspection()
