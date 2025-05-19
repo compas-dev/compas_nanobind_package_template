@@ -1,4 +1,4 @@
-from {{cookiecutter.project_slug}}.class_primitives import Data
+from {{cookiecutter.project_slug}}._class_primitives import Data
 
 sphere = Data("sphere", 42)
 print(f"Sphere: {sphere.name}, {sphere.value}")
