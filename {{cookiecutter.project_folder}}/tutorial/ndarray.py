@@ -1,4 +1,4 @@
-from {{cookiecutter.package_name}} import _ndarray
+from {{cookiecutter.project_slug}} import _ndarray
 import numpy as np
 import time
 

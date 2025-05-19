@@ -1,4 +1,4 @@
-from {{cookiecutter.package_name}}._vectors_copy import add, subtract
+from {{cookiecutter.project_slug}}._vectors_copy import add, subtract
 
 a = [1, 2, 3]
 b = [4, 5, 6]

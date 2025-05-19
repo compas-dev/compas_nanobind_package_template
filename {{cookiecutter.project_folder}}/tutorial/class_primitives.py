@@ -1,4 +1,4 @@
-from {{cookiecutter.package_name}}.class_primitives import Data
+from {{cookiecutter.project_slug}}.class_primitives import Data
 
 # Different ways to create Data objects
 sphere = Data("sphere", 42)           # Regular constructor

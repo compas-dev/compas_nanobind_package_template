@@ -1,4 +1,4 @@
-from {{cookiecutter.package_name}} import _primitives  # The actual C++ module
+from {{cookiecutter.project_slug}} import _primitives  # The actual C++ module
 
 help(_primitives)
 

@@ -1,4 +1,4 @@
-from {{cookiecutter.package_name}}._class_unique_pointer import create, consume
+from {{cookiecutter.project_slug}}._class_unique_pointer import create, consume
 
 data = create()
 data.name = "sphere"

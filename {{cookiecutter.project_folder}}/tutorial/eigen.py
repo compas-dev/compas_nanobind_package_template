@@ -1,4 +1,4 @@
-from {{cookiecutter.package_name}} import _eigen
+from {{cookiecutter.project_slug}} import _eigen
 import numpy as np
 
 # Matrix examples
