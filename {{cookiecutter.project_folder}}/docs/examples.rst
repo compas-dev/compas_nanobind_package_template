@@ -6,5 +6,3 @@ Examples
    :maxdepth: 1
    :titlesonly:
    :glob:
-
-   examples/*
