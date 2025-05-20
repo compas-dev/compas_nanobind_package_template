@@ -5,5 +5,11 @@
 .. currentmodule:: {{cookiecutter.project_slug}}
 
 
-.. toctree::
-    :maxdepth: 1
+Functions
+=========
+
+.. autosummary::
+    :toctree: generated/
+    :nosignatures:
+
+    primitives.add
