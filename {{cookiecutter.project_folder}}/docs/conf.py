@@ -149,6 +149,12 @@ html_context = {
     "doc_path": "docs",
 }
 
+{% if cookiecutter.use_organization == "yes" %}
+html_baseurl = "https://{{ cookiecutter.github_organization }}.github.io/{{ cookiecutter.project_slug }}/"
+{% else %}
+html_baseurl = "https://{{ cookiecutter.github_username }}.github.io/{{ cookiecutter.project_slug }}/"
+{% endif %}
+
 html_static_path = sphinx_compas2_theme.get_html_static_path() + ["_static"]
 html_css_files = []
 html_extra_path = []
