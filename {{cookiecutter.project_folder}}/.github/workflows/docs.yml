@@ -29,4 +29,4 @@ jobs:
 
       - uses: compas-dev/compas-actions.docs@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+           github_token: ${{ '{{' }} secrets.GITHUB_TOKEN {{ '}}' }}
