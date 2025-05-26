@@ -30,3 +30,4 @@ jobs:
       - uses: compas-dev/compas-actions.docs@v4
         with:
            github_token: ${{ '{{' }} secrets.GITHUB_TOKEN {{ '}}' }}
+           doc_url: https://{% if cookiecutter.github_organization %}{{ cookiecutter.github_organization }}{% else %}{{ cookiecutter.github_username }}{% endif %}.github.io/{{ cookiecutter.project_slug }}
