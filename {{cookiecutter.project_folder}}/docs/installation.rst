@@ -20,7 +20,7 @@ The latest version can be installed from local source.
 .. code-block:: bash
 
     git clone https://github.com/{{ cookiecutter.github_organization }}/{{ cookiecutter.project_slug }}.git
-    cd compas_tna
+    cd {{ cookiecutter.project_slug }}
     pip install -e .
 
 
@@ -32,5 +32,5 @@ To install `{{ cookiecutter.project_slug }}` for development, install from local
 .. code-block:: bash
 
     git clone https://github.com/{{ cookiecutter.github_organization }}/{{ cookiecutter.project_slug }}.git
-    cd compas_tna
+    cd {{ cookiecutter.project_slug }}
     pip install -e ".[dev]"
