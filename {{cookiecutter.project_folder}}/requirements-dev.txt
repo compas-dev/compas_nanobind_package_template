@@ -11,5 +11,3 @@ scikit-build-core
 nanobind
 cmake
 build
-cookiecutter
-jinja2_time
